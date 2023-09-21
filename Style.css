@@ -12,9 +12,11 @@ body, ul {
     padding: 0;
 }
 
+
 .main-menu li {
     display: inline;
     margin-right: 10px;
+    margin-inline: 12%;
 }
  
 .main-menu li:last-child{
@@ -22,22 +24,22 @@ body, ul {
 }
 
 .header {
-    background-color: rgb(178, 228, 243);
+    background-color: rgb(255, 255, 255);
     color: white;
     padding: 15px 20px;
     background-image: url(images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 .container {
     max-width: 80%;
-    /* auto? */
     margin: 0 auto;
 }
 
 a {
     text-decoration: none;
-    color: rgb(53, 18, 211);
+    color: rgb(255, 255, 255);
     font-size: 1.5rem;
     font-weight: bold;
     /* padding: 15px 0;
@@ -48,7 +50,7 @@ p {
 }
 
 .footer {
-    background-color: rgb(178, 228, 243);
+    background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     padding: 15px 0;
     margin-top: 20px;
@@ -57,8 +59,8 @@ p {
 
 .btn {
     text-decoration: none;
-    color: rgb(78, 79, 170);
-    border: 1.5px solid blue;
+    color: black;
+    border: 1.5px solid  black;
     padding: 6px 6px;
     border-radius: 20px;
     font-weight: bold;
@@ -67,14 +69,18 @@ p {
 }
 
 .btn-white{
-    color: rgb(184, 26, 123); 
-    border-color:  rgb(184, 26, 123);
+    color: rgb(255, 255, 255); 
+    border-color:  rgb(255, 255, 255);
 
 }
 
+.click{
+    color: palevioletred;
+}
+
 .btn:hover {
-    color: rgb(22, 173, 173);
-    border-color: rgb(20, 175, 175);
+    color: palevioletred;
+    border-color:  palevioletred;
 }
 
 .avatar {
@@ -94,7 +100,7 @@ p {
 }
 
 .w-50{
-    width: 50%;
+    width: 100%;
 }
 
 .mx-auto{
@@ -108,7 +114,7 @@ table{
 
 table, th, td{
 
-    border: 1px solid rgb(50, 42, 165);
+    border: 1px solid rgb(0, 0, 0);
 }
 
 th, td{
