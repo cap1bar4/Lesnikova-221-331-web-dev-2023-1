@@ -1,0 +1,58 @@
+.label {
+
+    display: block;
+    font-weight: bold;
+}
+
+.display-inline {
+    margin-bottom: 10px;
+    display: inline;
+}
+
+.image {
+    background-image: url(images/white.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+}
+
+.container {
+
+    font-size: 20px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+input, textarea, select {
+    font-size: inherit;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: rgb(3, 24, 119);
+    border: none;
+    color: azure;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+.exit {
+    font-size: 2rem;
+    text-align: right;
+    margin: 15px;
+} 
+
+.exit a {
+    text-decoration: none;
+    color: white
+}
+

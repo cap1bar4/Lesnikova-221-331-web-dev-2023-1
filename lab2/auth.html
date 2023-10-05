@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style_two.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+</head>
+<body class="img">
+
+    <h1 class="text-center">Аутентификация</h1>
+    <form method="post" action="https://httpbin.org/post" enctype="multipart/form-data">
+        <div class="container">
+            <fieldset class="auth_frame">
+
+                <div class="form-group">
+                    <label class="label" for="login">Логин</label>
+                    <input type="text" id="login" name="login" placeholder="Введите логин">
+                </div>
+        
+                <div class="form-group">
+                    <label class="label" for="password">Пароль</label>
+                    <input type="password" id="password" name="password" required placeholder="Введите пароль">
+                </div>
+        
+                <div class="form-group">
+                    <input type="checkbox" name="agree" id="agree">
+                    <label class="display-inline" for="agree">Запомнить меня</label>
+                </div>
+        
+                <button class="auth_botton" type="submit">Войти</button>  
+            </fieldset>
+        </div>
+    </form>
+    <footer>
+
+    </footer>
+</body>
+</html>
