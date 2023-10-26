@@ -1,0 +1,158 @@
+body {
+    font-family: Verdana, sans-serif; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0e68c;
+    background-image: url("images/фон.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px 0; 
+}
+
+h1 {
+    margin: 0; 
+}
+
+nav {
+    display: flex;
+    padding-top: 10px; 
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: x-large;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-direction: row; /* Изменено на "row" для размещения основного контента и сайдбара в строку */
+    flex: 1; /* Увеличиваем гибкое пространство для основного контента и сайдбара */
+}
+
+main .top_p {
+    text-align: right;
+}
+
+.yoga-benefits  {
+    text-align: justify; /* Выравнивание текста по ширине */
+    line-height: 1.5; /* Межстрочный интервал */
+    padding: 20px; 
+    border: 1px solid #ddd; /* Добавляем границу */
+    background-color: rgba(247, 209, 152, 0.137); 
+    background-image: url("images/фон_прозрачный.png");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.yoga-benefits h3 {
+    margin-top: 20px; /* Отступ над заголовками */
+}
+
+.yoga-benefits ol {
+    list-style-type: decimal; /* Нумерованный список */
+    padding-left: 20px; /* Отступ слева для списка */
+}
+
+
+aside {
+    width: auto; /* Задаем фиксированную ширину сайдбару */
+    height: auto;
+    background-color: #f5deb3;
+    padding: 20px;
+}
+
+/* Стили для списка в aside */
+aside ul {
+    list-style: none; /* Убираем маркеры по умолчанию */
+    text-align: left;
+    padding: 0; 
+}
+
+
+
+aside ul li a {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: #32c02f; 
+    display: block; /* Делаем элементы списка блочными для увеличения расстояния между ними */
+    margin-bottom: 10px; /* Увеличиваем расстояние между элементами списка */
+    text-shadow: 1px 1px 1px rgba(117, 80, 10, 0.233);
+}
+
+footer {
+    background-color: #f0e68c;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Дополнительные стили для страницы "Упражнения" */
+
+
+.yoga-exercises {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет контейнерам переноситься на следующую строку при нехватке места */
+    justify-content: space-between; /* Равномерное распределение контейнеров по ширине */
+}
+
+.exercise-container {
+    flex: 1; /* Распределение доступного пространства равномерно между контейнерами */
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    min-width: 40%; /* Максимальная ширина контейнера, учитывая отступы calc(30% - 20px) */
+    box-sizing: border-box; /* Учитываем отступы внутри контейнера */
+}
+
+.exercise-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.exercise-details {
+    text-align: center;
+}
+
+.exercise-details p {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.exercise-details ul {
+    list-style-type: disc;
+    padding: 0;
+    font-size: 22px;
+    margin: 0;
+    text-align: left;
+}
+
+.exercise-details ul {
+    list-style-type: disc;
+    list-style: none; /* Убираем маркеры по умолчанию */
+    padding: 20px;
+    font-size: 18px;
+    margin: 20px; /* Убираем внешние отступы для списка шагов */
+    text-align: left; /* Выравнивание текста списка влево */
+    text-shadow: 1px 1px 1px rgba(117, 80, 10, 0.233);
+}
