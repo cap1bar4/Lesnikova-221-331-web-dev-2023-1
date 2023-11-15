@@ -9,7 +9,7 @@
 <body class="image">
     <header>
         <div class="exit">
-            <button class="btn" type="button"><a  href="auth.html">Вход</a></button>
+            <a href="auth.html"><button class="btn" type="button">Вход</button></a>
         </div>
     </header>
 
@@ -18,16 +18,15 @@
     </h1>
 
     <div class="container">
-
         <form method="post" action="https://httpbin.org/post" enctype="multipart/form-data">
 
             <div class="form-group">
-                <lable class="label" for="fio">ФИО</lable>
-                 <input type="text" id="fio" name="fio" placeholder="Введите ФИО" value="Иван Иванов"> <!-- readonly -->
+                <label class="label" for="fio">ФИО</label>
+                <input type="text" id="fio" name="fio" placeholder="Введите ФИО" value="Иван Иванов"> <!-- readonly -->
             </div>
 
             <div class="form-group">
-                <lable class="label" for="email">E-mail</lable>
+                <label class="lable" for="email">E-mail</label>
                 <input type="text" id="email" name="email" required > <!-- required - обязательное поле -->
             </div>
 
@@ -41,33 +40,33 @@
 
                 <div class="form-group">
                     <input type="radio" name="source" id="advertising" value="advertising"> <!-- можно добавить sourse1 вместо sourse и можно будет выбрать 2 варианта -->
-                    <label  for="advertising">Реклама</label>
+                    <label for="advertising">Реклама</label>
                 </div>
 
             </fieldset>
 
             <div class="form-group"> 
-                <lable class="form-group label" for="msg_type"> Тип обращения </lable>
-                <select  name="msg_type" id="msg_type">
+                <label class="lable" for="msg_type"> Тип обращения </label>
+                <select name="msg_type" id="msg_type">
                     <option value="1">Жалоба</option>
                     <option value="2" selected>Предложение</option>
                 </select>
             </div>
 
             <div class="form-group">
-                <lable class="label" for="message">Текст сообщения</lable>   
+                <label class="lable" for="message">Текст сообщения</label>
                 <textarea name="message" id="message" cols="70" rows="10">Введите текст сообщения
                 </textarea>
             </div>
 
             <div class="form-group">
-                <labale  class="label" for="file">Вложение</labale>
+                <label class="lable" for="file">Вложение</label>
                 <input type="file" name="file" id="file" multiple>
             </div>
 
             <div class="form-group">
                 <input type="checkbox" name="agree" id="agree" >
-                <labale for="agree">Даю согласие на обработку персональных данных</labale>
+                <label for="agree">Даю согласие на обработку персональных данных</label>
             </div>
 
             <button class="btn" type="submit">Отправить</button>
