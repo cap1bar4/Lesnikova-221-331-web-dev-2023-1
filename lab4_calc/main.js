@@ -86,18 +86,18 @@ function evaluate(str) {
             const operand1 = stack.pop();
 
             switch (token) {
-                case '+':
-                    stack.push(operand1 + operand2);
-                    break;
-                case '-':
-                    stack.push(operand1 - operand2);
-                    break;
-                case '*':
-                    stack.push(operand1 * operand2);
-                    break;
-                case '/':
-                    stack.push(operand1 / operand2);
-                    break;
+            case '+':
+                stack.push(operand1 + operand2);
+                break;
+            case '-':
+                stack.push(operand1 - operand2);
+                break;
+            case '*':
+                stack.push(operand1 * operand2);
+                break;
+            case '/':
+                stack.push(operand1 / operand2);
+                break;
             }
         }
     }
@@ -115,31 +115,26 @@ function clickHandler(event) {
         if (buttonText === '=') {
             const expression = screen.textContent.trim();
             const result = evaluate(compile(expression));
-            lastResult = result; // Сохраняем результат в ANS
+            lastResult = result; 
             screen.textContent = result.toFixed(2);
-            resetInput = true; // Устанавливаем флаг для сброса ввода
+            resetInput = true; 
         } else if (buttonText === 'C') {
             screen.textContent = '';
-            resetInput = false; // Сброс флага при нажатии "C"
+            resetInput = false; 
         } else {
             if (resetInput) {
                 if (isNumeric(buttonText)) {
-                    screen.textContent = buttonText; // Если флаг установлен и введено число, сбрасываем ввод
+                    screen.textContent = buttonText; 
                 } else {
-                    screen.textContent = lastResult + buttonText; // Если введен знак операции, используем lastResult
+                    screen.textContent = lastResult + buttonText; 
                 }
-                resetInput = false; // Сбрасываем флаг после однократного использования
+                resetInput = false; 
             } else {
                 screen.textContent += buttonText;
             }
         }
     }
 }
-
-
-
-
-
 
 window.onload = function () {
     const buttonsContainer = document.querySelector('.buttons');

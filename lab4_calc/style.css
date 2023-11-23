@@ -29,7 +29,7 @@ main {
 .digits,
 .other {
     display: flex;
-    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку при нехватке места */
+    flex-wrap: wrap; 
 }
 
 .key {
@@ -64,7 +64,7 @@ main {
 .digits,
 .other {
     display: flex;
-    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку при нехватке места */
+    flex-wrap: wrap;
 }
 
 .digit,
@@ -72,6 +72,6 @@ main {
 .bracket,
 .result,
 .clear {
-    flex: 1 0 30%; /* Равномерно распределяет пространство по ширине и задает максимальную ширину 30% */
-    margin: 5px; /* Добавляет небольшой отступ между кнопками */
+    flex: 1 0 30%; 
+    margin: 5px; 
 }
